@@ -114,14 +114,6 @@ Vagrant.configure("2") do |config|
             :phpunit => {
                 :install_method          => 'composer'
             },
-            :mysql => {
-                # Feel free to change the password to something more secure
-                :server_root_password    => database_password,
-                :server_repl_password    => database_password,
-                :server_debian_password  => database_password,
-                :bind_address            => ip_address,
-                :allow_remote_root       => true
-            },
             :postgresql => {
                 :users => [{
                     :username            => "root",
