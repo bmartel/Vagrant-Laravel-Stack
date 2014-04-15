@@ -103,7 +103,7 @@ Vagrant.configure("2") do |config|
             },
             :php => {
                 # Customize PHP modules here
-                :packages                => %w{ php5 php5-dev php5-cli php-pear php5-apcu php5-mysql php5-curl php5-mcrypt php5-memcached php5-gd php5-json },
+                :packages                => %w{ php5 php5-dev php5-cli php-pear php5-apcu php5-mysql php5-pgsql php5-curl php5-mcrypt php5-memcached php5-gd php5-json },
 
                 # It is necessary to specify a custom conf dir as we are using Apache 2.4
                 :ext_conf_dir            => "/etc/php5/mods-available"
